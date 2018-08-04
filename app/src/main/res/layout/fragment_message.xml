@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MessageFragment">
+
+    <TextView
+        android:id="@+id/text_message_fragment_received_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/margin_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="@string/message">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_message_fragment_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/message"
+        app:layout_constraintBottom_toTopOf="@id/button_message_fragment_send_message"
+        app:layout_constraintLeft_toLeftOf="parent">
+    </EditText>
+
+    <Button
+        android:id="@+id/button_message_fragment_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </Button>
+
+</android.support.constraint.ConstraintLayout>
